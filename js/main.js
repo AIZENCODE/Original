@@ -1,7 +1,7 @@
 
 const usuario = 
   {
-    name:'roxana sanchez peña',
+    name:'diego saravia sanchez',
     email:'diego.saria@gmail.com',
     rol:'administrador'
   };

@@ -46,8 +46,8 @@ $font-family-base: 'Montserrat', sans-serif;
 
 /* FIN */
 
-* {
-        //  outline: 1px solid red;
+* { 
+    // outline: 1px solid red;
 }
 
 body {
@@ -195,11 +195,12 @@ a {
 }
 
 .nav__menu {
-    margin-top: 4rem;
+   
     list-style-type: none;
     padding-left: 0;
     display: grid;
     gap: .2em;
+    z-index: 1000;
 
 
 }
@@ -215,6 +216,7 @@ a {
     font-weight: 600;
     transition: all .2s;
     cursor: pointer;
+    background: #fff;
 }
 
 .nav__item:hover {
@@ -231,7 +233,7 @@ a {
 }
 
 .nav__anuncio {
-    margin-top: 9.8rem;
+    
     position: relative;
     display: grid;
     background: #F4F0FD;
@@ -240,6 +242,20 @@ a {
     border-radius: 25px;
     z-index: 100;
     gap: 1em;
+    z-index: 100;
+
+}
+.nav__anuncio::before{
+    content: "";
+    background: url(/img/img1.png);
+    position: absolute;
+    top: -190px;
+    right: 0;
+    width: 100%;
+    height: 190px;
+    background-size:contain ;
+    background-repeat: no-repeat;
+    background-position: center;
 
 }
 
@@ -252,7 +268,7 @@ a {
     height: 190px;
     width: 100%;
     position: absolute;
-    top: -168px;
+    top: -170px;
     right: 0;
     left: 0;
 
@@ -300,6 +316,14 @@ a {
 
 // cita cards
 
+.boton__toggle{
+    background: none;
+    font-weight: 600;
+}
+.citasinfo__order{
+    font-weight: 600;
+    color: var(--plomo);
+}
 .cita__item {
     outline: 2px solid #fff;
     box-shadow: 1px 1px 15px #0000000b;
@@ -422,6 +446,7 @@ a {
     body {
         font-size: 12.5px;
     }
+
 
 
 }
