@@ -56,6 +56,8 @@ body {
 
 a {
     all: unset;
+    cursor: pointer;
+    // font-weight: 600;
 }
 
 .font__ocho {
@@ -389,6 +391,7 @@ a {
 
 // cita cards fin 
 
+@import url('/css/login.css');
 
 // `xxl` applies to x-large devices (large desktops, less than 1400px)
 @media (max-width: 1399.98px) {
